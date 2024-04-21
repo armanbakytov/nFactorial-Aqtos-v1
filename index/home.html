@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru" id="home.html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aqtos: Dog Wiki</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+<style>
+    html{
+
+        scroll-behavior: smooth;
+    }
+    #carousel-container::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+</head>
+
+
+
+
+<body class="bg-[#131313]">
+    
+    <h1 id="navbar" class="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0 backdrop-blur-sm bg-black/30">
+        
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <a class="flex text-xl gap-2 items-center justify-center text-white " href="../index/home.html">
+                    <span class="flex-shrink-0 text-white text-2xl font-extrabold hover:text-orange-500">Aqtos</span>
+                    <span class="flex-shrink-0 text-white text-2xl font-extrabold"> - Собачья Вики</span>
+
+                </a>
+
+            </div>
+
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../index/home.html">Главная</a>
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../catalog/catalog.html">Каталог</a>
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../care/care.html">Уход за собаками</a>
+            </div>
+        </nav>
+</h1>
+
+
+
+<div class="flex flex-wrap md:flex-nowrap mt-[-100px]">
+    <div class="flex-1 bg-cover bg-center h-screen p-5 text-white flex flex-col justify-center " style="background-image: url(../public/back.png);">
+        <div class='flex flex-col m-10 gap-5 max-w-[1200px] mx-auto justify-center items-center'>
+            <h1 class="text-5xl font-extrabold ">Добро пожаловать в Aqtos!</h1>
+        
+            <p class="text-sm uppercase">Исследуйте разнообразие пород собак</p>
+            <div><a class="inline-flex
+                text-orange-100
+                bg-orange-500
+                hover:bg-orange-700
+               border-0 py-2 px-6 focus:outline-none rounded text-lg" href="#why">Узнать больше</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div id="why">
+    <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-white">
+        <div class="p-6 md:p-16 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-4">
+                <div class="lg:col-span-6 lg:col-start-8 mb-10 lg:mb-0">
+                    <h2 class="text-2xl text-black font-bold sm:text-3xl text-center">Почему Aqtos?</h2>
+                    <nav class="grid gap-4 mt-5 md:mt-10" aria-label="Tabs" role="tablist">
+                        <button type="button" class="hover:bg-gray-300 text-start p-4 md:p-5 rounded-xl text-black">
+                            <span class="flex">
+                                
+                                <span class="ml-6 grow">
+                                    <span class="block text-lg font-semibold">Обширная база данных</span>
+                                    <span class="block mt-1 text-gray-500">Откройте для себя разнообразие пород собак со всего мира.</span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="hover:bg-gray-300 text-start p-4 md:p-5 rounded-xl text-black">
+                            <span class="flex">
+                                
+                                <span class="ml-6 grow">
+                                    <span class="block text-lg font-semibold">Руководства по уходу</span>
+                                    <span class="block mt-1 text-gray-500">Получите доступ к подробный руководствам по уходу за собаками.</span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="hover:bg-gray-300 text-start p-4 md:p-5 rounded-xl text-black">
+                            <span class="flex">
+                                
+                                <span class="ml-6 grow">
+                                    <span class="block text-lg font-semibold">Интерактивный поиск</span>
+                                    <span class="block mt-1 text-gray-500">Используйте наши фильтры для поиска идеальной собаки.</span>
+                                </span>
+                            </span>
+                        </button>
+                        
+                    </nav>
+                </div>
+                <div class="lg:col-span-6 w-full lg:w-1/2">
+                    <div class="tabpanel" aria-labelledby="tabs-with-card-item-1">
+                        <img class="rounded-xl shadow-lg" src="../public/beagle-hound-dog.jpg" alt="doggy on why aqtos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="flex-row m-10px">
+        <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl mx-auto mt-16 mb-10 text-center"><span class="text-transparent bg-clip-text bg-gradient-to-r to-[#131313] from-white text-center">Наши Герои ...</span></h2>
+        
+                <main id="carousel-container" class="flex h-[500px] items-center justify-center overflow-x-auto scroll-snap-type: x mandatory ] ">
+                    <ul id="carousel" class="flex" style="width: calc(500px * 10);">
+                    </ul>
+                </main>
+                
+                <script>
+                    function fetchRandomDogs(numberOfDogs) {
+                        var carousel = document.getElementById('carousel');
+                        carousel.style.width = (500 * numberOfDogs) + 'px';
+                    
+                        for (var i = 0; i < numberOfDogs; i++) {
+                            fetch('https://dog.ceo/api/breeds/image/random')
+                            .then(function(response) {
+                                return response.json();
+                            })
+                            .then(function(data) {
+                                if (data.status === 'success') {
+                                    var li = document.createElement('li');
+                                    li.className = 'snap-start shrink-0 w-[500px] h-[500px] align-center flex-none';
+                    
+                                    var img = document.createElement('img');
+                                    img.src = data.message;
+                                    img.alt = 'Random Dog';
+                                    img.className = 'w-full h-full object-cover';
+                    
+                                    li.appendChild(img);
+                                    carousel.appendChild(li);
+                                }
+                            })
+                            .catch(function(error) {
+                                console.log('Error fetching image:', error);
+                            });
+                        }
+                    }
+                    
+                    document.addEventListener('DOMContentLoaded', function() {
+                        fetchRandomDogs(10);
+                    })
+                    
+                </script>
+        
+            </div>
+</div>
+
+
+    <div class="faq bg-black text-white py-10">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center  m-10">Часто задаваемые вопросы</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-6">
+                <div class="bg-black text-white">
+                    <h3 class="text-lg font-semibold text-gray-400">Как выбрать породу собаки?</h3>
+                    <p class="mt-2 text-gray-400 dark:text-gray-400">Ознакомьтесь с нашим руководством по выбору породы на основе вашего образа жизни.</p>
+                    </div>
+    
+                    
+                    <div class="bg-black text-white">
+                        <h3 class="text-lg font-semibold text-gray-400">Как ухаживать за собакой?</h3>
+                        <p class="mt-2 text-gray-400 dark:text-gray-400">Изучите наши руководства по кормлению, уходу и здоровью собак.</p>
+                    </div>
+                        
+                    
+                    <div class="bg-black text-white">
+                        <h3 class="text-lg font-semibold text-gray-400">Где я могу узнать больше о здоровье собак?</h3>
+                        <p class="mt-2 text-gray-400 dark:text-gray-400">Прочтите наши статьи о здоровье и благополучии собак.</p>
+                        
+                    
+                    </div>
+                        <div class="bg-black text-white">
+                            <h3 class="text-lg font-semibold text-gray-400">Можно ли держать собаку в квартире?</h3>
+                            <p class="mt-2 text-gray-400 dark:text-gray-400">Узнайте, какие породы лучше всего подходят для жизни в квартире.</p>
+                        </div>
+                        
+                        
+                    <div class="bg-black text-white">
+                            <h3 class="text-lg font-semibold text-gray-400">Как подготовить дом к приему собаки?</h3>
+                            <p class="mt-2 text-gray-400 dark:text-gray-400">Получите советы по подготовке вашего дома к новому члену семьи.</p></div>
+                            <div class="bg-black text-white">
+                                <h3 class="text-lg font-semibold text-gray-400">Как обучать собак?</h3>
+                                <p class="mt-2 text-gray-400 dark:text-gray-400">Ознакомьтесь с методиками обучения и поведенческими техниками.</p>
+                            </div>
+                        
+                        </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+    
+    <div class="bg-black pt-4 sm:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="mb-16 grid grid-cols-2 gap-12 border-t pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
+                <div class="col-span-full lg:col-span-2">
+                    <div class="mb-4 lg:-mt-2">
+                        <a class="text-white inline-flex items-center gap-2 text-xl font-bold md:text-2xl" href="../index/home.html">
+                            <p class="flex-shrink-0">Aqtos - Собачья Вики</p>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6 sm:pr-8">© 2024 Aqtos. Все о собаках, их уходе и породах.</p>
+                            
+                </div>
+                <div>
+                    <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">Ссылки</div>
+                    <nav class="flex flex-col gap-4"><div><a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="../index/home.html">Главная</a>
+                    </div>
+                    <div>
+                        <a class="text-gray-400 hover:text-orange-500 active:text-orange-600 " href="../catalog/catalog.html">Каталог</a>
+                    </div>
+                    <div>
+                        <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="../care/care.html">Уход за собаками</a>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">Свяжитесь с нами!</div>
+                <nav class="flex flex-col gap-4"><div>
+                    <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.facebook.com/">Facebook</a>
+                </div>
+                <div>
+                    <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.instagram.com/">Instagram</a>
+                </div><div><a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.youtube.com/">Youtube</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="text-gray-400 border-t py-8 text-center text-sm">Aqtos - Собачья Вики © 2024</div>
+</footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru" id="catalog.html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aqtos: Dog Wiki</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../catalog/scripts.js"></script>
+<style>
+    html{
+
+        scroll-behavior: smooth;
+    }
+    #carousel-container::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+</head>
+
+<body class="font-sans bg-white">
+
+    <h1 id="navbar" class="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0 backdrop-blur-sm bg-black/30">
+        
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <a class="flex text-xl gap-2 items-center justify-center text-white " href="../index/home.html">
+                    <span class="flex-shrink-0 text-white text-2xl font-extrabold hover:text-orange-500">Aqtos</span>
+                    <span class="flex-shrink-0 text-white text-2xl font-extrabold"> - Собачья Вики</span>
+
+                </a>
+
+            </div>
+
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../index/home.html">Главная</a>
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../catalog/catalog.html">Каталог</a>
+            <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="../care/care.html">Уход за собаками</a>
+            </div>
+        </nav>
+</h1>
+
+
+
+
+
+
+<div class="flex flex-wrap md:flex-nowrap  mt-[-100px] " >
+    <div class="flex-1 bg-gray-900 p-5 text-white flex flex-col justify-center items-center" > 
+        <p class="text-sm uppercase mb-2">Исследуйте разнообразие пород собак</p>
+        <h1 class="text-5xl font-bold">Каталог Собак</h1>
+        <input type="text" id="searchBox" placeholder="Поиск..." oninput="filterDogs()" class=" text-black w-[150px] rounded-lg h-[30px] mt-4 p-2 min-w-[250px]"/>
+    </div>
+    <div class="flex-1">
+        <img src="../public/Cute-Dog.jpg" alt="A dog being groomed" class="w-full h-full object-cover">
+    </div>
+</div>
+
+  
+
+    <header class="text-center mt-4">
+        <h1 class="text-2xl font-semibold">Каталог собак</h1>
+    </header>
+
+    <section id="dogList" class="flex flex-wrap justify-around p-5"></section>
+
+    <div id="modal" class="hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-40 justify-center items-center">
+        <div class="modal-content bg-white w-1/3 p-4 m-2 overflow-hidden rounded-lg shadow-lg relative">
+            <button class="close absolute top-2 right-2 cursor-pointer px-5 py-2 text-white rounded-lg z-50 text-3xl opacity-80; hover:opacity-100">&times;</button>
+            <div id="dogInfo" class="text-black"
+                style="height: 500px; background-size: cover; background-position: center;"></div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+
+    <a id="to-top" href="#" class="sticky bottom-2.5 left-2.5 px-5 py-2.5 bg-blue-900 text-white text-sm font-normal rounded-full no-underline hover:underline ackdrop-blur-sm bg-black/30">Back to top</a>
+
+    <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-16 grid grid-cols-2 gap-12 border-t pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
+            <div class="col-span-full lg:col-span-2">
+                <div class="mb-4 lg:-mt-2">
+                    <a class="text-white inline-flex items-center gap-2 text-xl font-bold md:text-2xl" href="../index/home.html">
+                        <p class="flex-shrink-0">Aqtos - Собачья Вики</p>
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-6 sm:pr-8">© 2024 Aqtos. Все о собаках, их уходе и породах.</p>
+                        
+            </div>
+            <div>
+                <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">Ссылки</div>
+                <nav class="flex flex-col gap-4"><div><a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="../index/home.html">Главная</a>
+                </div>
+                <div>
+                    <a class="text-gray-400 hover:text-orange-500 active:text-orange-600 " href="../catalog/catalog.html">Каталог</a>
+                </div>
+                <div>
+                    <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="../care/care.html">Уход за собаками</a>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">Свяжитесь с нами!</div>
+            <nav class="flex flex-col gap-4"><div>
+                <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div>
+                <a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.instagram.com/">Instagram</a>
+            </div><div><a class="text-gray-400 hover:text-orange-500 active:text-orange-600  " href="https://www.youtube.com/">Youtube</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="text-gray-400 border-t py-8 text-center text-sm">Aqtos - Собачья Вики © 2024</div>
+</footer>
+
+</body>
+
+</html>
