@@ -1,4 +1,4 @@
-![Screenshot 2024-04-22 at 02.11.37.png](https://ibb.co/2gsGb73)
+![Aqtos](https://ibb.co/2gsGb73)
 
 # Aqtos - Собачья Вики
 
