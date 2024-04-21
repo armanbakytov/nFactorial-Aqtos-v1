@@ -1,4 +1,4 @@
-<p align="center", border-radius=10px>
+<p align="center">
   <img src="https://as1.ftcdn.net/v2/jpg/05/93/78/60/1000_F_593786094_XHnMlRS2KuZMcolO3p83lpfWvqspDpXL.jpg" />
 </p>
 # Aqtos - Собачья Вики
