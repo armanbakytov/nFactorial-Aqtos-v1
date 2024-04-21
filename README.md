@@ -1,5 +1,7 @@
 ![Aqtos](https://wuucky.com/wp-content/uploads/2024/01/Top-10-Dog-Breeds-for-Familiess.jpg)
-
+<p align="center">
+  <img src="https://wuucky.com/wp-content/uploads/2024/01/Top-10-Dog-Breeds-for-Familiess.jpg" />
+</p>
 # Aqtos - Собачья Вики
 
 ## О проекте
