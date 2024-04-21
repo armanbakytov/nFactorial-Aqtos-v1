@@ -1,3 +1,4 @@
+# Russian
 <p align="center">
   <img src="https://as1.ftcdn.net/v2/jpg/05/93/78/60/1000_F_593786094_XHnMlRS2KuZMcolO3p83lpfWvqspDpXL.jpg" />
 </p>
@@ -33,5 +34,41 @@ Aqtos - это информационный портал, посвящённый
 
 ## Связаться со мной
 - **Telegram**: [Telegram](https://t.me/arman_dx)
+
+# English
+<p align="center">
+  <img src="https://as1.ftcdn.net/v2/jpg/05/93/78/60/1000_F_593786094_XHnMlRS2KuZMcolO3p83lpfWvqspDpXL.jpg" />
+</p>
+# Aqtos - Dog Wiki
+
+## About the Project
+Aqtos is an informational portal dedicated to dogs. The main goal of the project is to provide users with extensive information about different dog breeds, as well as guides on their care and upbringing.
+
+## Technologies
+- **HTML** - for website structure.
+- **CSS** (Tailwind CSS) - for styling.
+- **JavaScript** - for interactivity.
+- **Google Fonts** - for beautiful and readable fonts.
+- **dog.ceo API** - for loading random dog images.
+
+## Requirements
+For the correct functioning of the website, a browser supporting HTML5 and CSS3 is required. Stable internet access is also needed to interact with the API and load content.
+
+## Installation and Launch
+1. Clone the repository:
+
+2. Open the file `index.html` in your browser.
+
+## Features
+- **Interactive search and filtering** of breeds in real time.
+- **Responsive design** ensures proper display on all devices.
+
+## Issues and Compromises
+- Possible delays in loading images due to API limitations.
+- The need to balance between design and performance, especially on mobile devices.
+
+## Contact Me
+- **Telegram**: [Telegram](https://t.me/arman_dx)
+
 
 
