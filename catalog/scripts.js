@@ -170,9 +170,16 @@ function fetchDogs() {
     
 
 }
+
+var displayedBreeds = []
+
 function displayDog(breedEnglish, breedRussian, imageUrl) {
     var dogList = document.getElementById('dogList');
+    
+    if(displayedBreeds.includes(breedEnglish)){return;}
 
+    displayedBreeds.push(breedEnglish);
+    
     var dogElement = document.createElement('div');
     dogElement.className = 'relative dog w-1/4 m-2 overflow-hidden rounded-lg shadow-lg cursor-pointer';
 
